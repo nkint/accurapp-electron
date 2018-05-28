@@ -5,7 +5,7 @@ export default class App extends React.Component {
     return (
       <div>
         <h2>
-          React App
+          Accurapp on electron
         </h2>
         <p>
           To get started, edit <code>components/App.js</code> and save to reload.

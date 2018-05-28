@@ -4,8 +4,13 @@
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
-    "start": "accurapp-scripts start",
-    "build": "accurapp-scripts build"
+    "accurapp-start": "OPEN=false accurapp-scripts start",
+    "build": "accurapp-scripts build",
+    "start": "nf start -p 3000",
+    "electron": "electron .",
+    "electron-start": "node src/electron-wait-react",
+    "dist": "rm -rf dist; PUBLIC_URL=. npm run build && build",
+    "pack": "electron-builder --dir"
   },
   "browserslist": {
     "production": [
@@ -24,6 +29,8 @@
   "devDependencies": {
     "accurapp-scripts": "^4.0.0-beta.2",
     "babel-preset-accurapp": "^4.0.0-beta.2",
+    "electron": "^2.0.2",
+    "electron-builder": "^20.15.1",
     "eslint-config-accurapp": "^4.1.0-beta.2",
     "webpack-preset-accurapp": "^4.0.0-beta.2"
   },
@@ -35,5 +42,20 @@
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
     "tachyons-extra": "^1.0.2"
-  }
+  },
+  "main": "public/electron.js",
+  "description": "foo",
+  "author": "foo",
+  "build": {
+    "appId": "com.electron.electron-with-create-react-app",
+    "win": {
+      "icon": "https://cdn2.iconfinder.com/data/icons/designer-skills/128/react-256.png"
+    },
+    "directories": {
+      "buildResources": "public"
+    },
+    "extends": "react-cra",
+    "files": ["**/*"]
+  },
+  "files": ["**/*"]
 }

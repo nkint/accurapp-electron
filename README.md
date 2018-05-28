@@ -1,4 +1,4 @@
-# Mega Viz
+# Accurapp-Electron
 
 ## ELECTRON
 Adapetd to work with Electron from this gist:

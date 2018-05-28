@@ -21,10 +21,9 @@ Once you installed the dependencies running `yarn`, these are the available comm
 
 ## VERSIONS:
 
-accurapp-scripts: ^4.0.0-beta.2
-electron: ^2.0.2
-electron-builder: ^20.15.1
-webpack-preset-accurapp: ^4.0.0-beta.2
-
-node: 9.5.0
-yearn: 1.3.2
+- accurapp-scripts: ^4.0.0-beta.2
+- electron: ^2.0.2
+- electron-builder: ^20.15.1
+- webpack-preset-accurapp: ^4.0.0-beta.2
+- node: 9.5.0
+- yearn: 1.3.2

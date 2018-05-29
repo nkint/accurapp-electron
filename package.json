@@ -38,6 +38,7 @@
     "@accurat/tachyons-lite": "^1.0.3",
     "d3": "^5.4.0",
     "lodash": "^4.17.10",
+    "mobx": "^4.3.0",
     "modern-normalize": "^0.4.0",
     "react": "^16.4.0",
     "react-dom": "^16.4.0",
@@ -55,7 +56,11 @@
       "buildResources": "public"
     },
     "extends": "react-cra",
-    "files": ["**/*"]
+    "files": [
+      "**/*"
+    ]
   },
-  "files": ["**/*"]
+  "files": [
+    "**/*"
+  ]
 }

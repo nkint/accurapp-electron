@@ -1,6 +1,9 @@
 import React from 'react'
+import { observable } from 'mobx'
 
 export default class App extends React.Component {
+  @observable title = ''
+
   render() {
     return (
       <div>

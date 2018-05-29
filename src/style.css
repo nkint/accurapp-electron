@@ -1,3 +1,10 @@
 .overflow-auto, .overflow-x-auto, .overflow-y-auto {
   -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on touch devices */
 }
+
+@font-face {
+  font-family: Berthold;
+  font-style: normal;
+  font-weight: normal;
+  src: url("~fonts/Berthold.otf") format("opentype");
+}
